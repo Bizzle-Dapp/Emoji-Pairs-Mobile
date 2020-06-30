@@ -65,27 +65,29 @@ const styles = StyleSheet.create({
     },
 
     button: {
-        backgroundColor: 'rgba(140,120,90,0.699)',
+        backgroundColor: 'rgba(100,120,190,0.699)',
         borderColor: 'rgba(51, 51, 117, 0.699)',
         borderStyle: "solid",
         borderWidth: 2,
         borderRadius: 10,
         marginLeft: 5,
         marginRight: 5,
-        width: 50,
-        height: 30,
+        width: 100,
+        height: 40,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         fontSize: 12,
+        
     },
     buttonText: {
         textShadowColor: '#697eaf',
         textShadowOffset: {width: 1, height: 1},
         textShadowRadius: 2,
+        color: 'white',
+        fontWeight: 'bold'
     }
-      
 });
 
 export default styles;

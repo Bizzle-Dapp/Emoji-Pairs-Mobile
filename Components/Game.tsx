@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View, Button, TouchableOpacity } from 'react-native';
 import styles from '../Styles';
 import { Card, CardProps } from './Card';
 
@@ -208,7 +208,9 @@ export const Game: React.FC<GameProps> = (props) => {
         return(
         <>
             <View >
-                <Button title="Reset" onPress={() => props.setDifficultyLevel(Difficulty.None)}/>
+                <TouchableOpacity style={styles.button} onPress={() => props.setDifficultyLevel(Difficulty.None)}>
+                    <Text style={styles.buttonText}>Reset</Text>
+                </TouchableOpacity> 
             </View>
             <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', marginLeft:20, marginRight:20, marginTop:20}}>
             {emojisInPlay && emojisInPlay.length > 0 && 

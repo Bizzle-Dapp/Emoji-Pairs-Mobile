@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View, Button, TouchableOpacity } from 'react-native';
 import styles from '../Styles';
 
 enum Difficulty {
@@ -20,9 +20,21 @@ export const DifficultySelect: React.FC<DifficultySelectProps> = (props) => {
     return(
         <>
         <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
-            <View style={{margin:5}}><Button title="Easy" onPress={() => props.setDifficultyLevel(Difficulty.Easy)}/></View>
-            <View style={{margin:5}}><Button title="Medium" onPress={() => props.setDifficultyLevel(Difficulty.Medium)}/></View>
-            <View style={{margin:5}}><Button title="Hard" onPress={() => props.setDifficultyLevel(Difficulty.Hard)}/></View>
+            <View style={{margin:5}}>
+            <TouchableOpacity style={styles.button} onPress={() => props.setDifficultyLevel(Difficulty.Easy)}>
+                    <Text style={styles.buttonText}>Easy</Text>
+                </TouchableOpacity> 
+            </View>
+            <View style={{margin:5}}>
+            <TouchableOpacity style={styles.button} onPress={() => props.setDifficultyLevel(Difficulty.Medium)}>
+                    <Text style={styles.buttonText}>Medium</Text>
+                </TouchableOpacity> 
+            </View>
+            <View style={{margin:5}}>
+                <TouchableOpacity style={styles.button} onPress={() => props.setDifficultyLevel(Difficulty.Hard)}>
+                    <Text style={styles.buttonText}>Hard</Text>
+                </TouchableOpacity> 
+            </View>
         </View>
         </>
     )
