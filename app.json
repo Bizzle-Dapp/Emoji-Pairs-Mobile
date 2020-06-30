@@ -1,0 +1,12 @@
+{
+  "name": "emojipairsmobile",
+  "displayName": "emojipairsmobile",
+  "expo": {
+    "name": "emojipairsmobile",
+    "slug": "emojipairsmobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
