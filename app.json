@@ -1,8 +1,9 @@
 {
   "name": "emojipairsmobile",
-  "displayName": "emojipairsmobile",
+  "displayName": "Emoji Pairs",
   "expo": {
-    "name": "emojipairsmobile",
+    "name": "Emoji Pairs",
+    "icon": "./img/icon.png",
     "slug": "emojipairsmobile",
     "version": "1.0.0",
     "assetBundlePatterns": [
